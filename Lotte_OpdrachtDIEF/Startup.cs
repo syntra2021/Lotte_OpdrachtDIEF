@@ -34,6 +34,7 @@ namespace Lotte_OpdrachtDIEF
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Lotte_OpdrachtDIEF", Version = "v1" });
             });
             services.AddSingleton<IProductService, DbProductService>();
+            services.AddSingleton<IEmployeeService, DbEmployeeService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
